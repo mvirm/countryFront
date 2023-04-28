@@ -6,7 +6,7 @@
     align-items: center;
 }
 .contenedor {
-    background-color:rgba(217, 217, 217, 0.8);
+    background-color:rgba(217, 217, 217,0.9);
     width: 80%;
     border-top-right-radius: 40px;
     border-bottom-left-radius: 40px;

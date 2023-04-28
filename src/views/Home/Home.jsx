@@ -26,15 +26,17 @@ const Home = () => {
 
     return (
         <div>
-            <div className={styles.selects}>
-                <SearchBar />
-                <Order />
-                <Filters />
-                <button onClick={handleShowAll} className={styles.btn}>Show all</button>
+            <div className={styles.container}>
+                 <div className={styles.selects}>
+                    <SearchBar />
+                    <Order />
+                    <Filters />
+                    <button onClick={handleShowAll} className={styles.btn}>Show all</button>
+                </div>
             </div>
-            <CardsContainer/>
-            <Footer/>
-        </div>
+            <CardsContainer />
+            <Footer />
+      </div>
     )
 };
 

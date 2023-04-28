@@ -1,14 +1,21 @@
-.selects {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.container {
     float: left; 
     width: 200px; 
-    height: 520px;
-    margin: 0px;
+    height: auto;
     background-color: hsl(0, 0%, 35%);
     box-shadow: 10px 0px 10px -5px rgba(0, 0, 0, 0.75);
-}
+  }
+  
+  .selects {
+    display: flex;
+    flex-direction: column;
+    float: left; 
+    width: 200px; 
+    height: 150vh;
+    margin-top: 30px;
+    background-color: hsl(0, 0%, 35%);
+    box-shadow: 10px 0px 10px -5px rgba(0, 0, 0, 0.75);
+  }
 .btn {
     font-family:Georgia, 'Times New Roman', Times, serif;
     color:#353535;
@@ -16,7 +23,7 @@
     font-weight: bold;
     padding: 5px 10px 5px 10px;
     width: fit-content;
-    margin-top: 10px;
+    margin-top: 25px;
     background-color: #ffd500;
     border: none;
     box-shadow: 

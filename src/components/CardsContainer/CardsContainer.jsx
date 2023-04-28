@@ -23,7 +23,7 @@ const CardsContainer = () => {
     };
   
     return (
-      <div>
+      <div className={styles.fondo}>
         <Pagination
           countriesPerPage={countriesPerPage}
           totalCountries={countries.length}
@@ -33,6 +33,7 @@ const CardsContainer = () => {
           next={next}
         />
         <div className={styles.container}>
+          <div className={styles.cards}>
           {currentCountries && currentCountries.map((c) => ( //uso currentCountries para que renderize solo las cards de esa pagina
             <Card
               id={c.id}
@@ -43,6 +44,7 @@ const CardsContainer = () => {
               key={c.id}
             />
           ))}
+          </div>
         </div>
       </div>
     );

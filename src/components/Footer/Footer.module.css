@@ -1,7 +1,10 @@
 .footer {
     background-color:#003d48;
-    padding: 7px; 
-    color:#d9d9d9
+    padding: 2px; 
+    color:#d9d9d9;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
  .h5 {
     text-align: center;
