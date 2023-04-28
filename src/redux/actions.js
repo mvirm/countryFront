@@ -2,9 +2,12 @@
 import axios from 'axios';
 import { GET_ALL_COUNTRIES, GET_COUNTRY_BY_ID, SEARCH_BY_NAME, FILTER_BY_CONTINENT, SORT_BY_POPULATION, SORT_BY_NAME, GET_ACTIVITIES, FILTER_BY_ACTIVITY} from './types';
 
+//const route = 'http://localhost:3001'
+const route = 'https://countryback-production.up.railway.app'
+
 export const getAllCountries = () => {
     return async (dispatch) => {
-        const response = await axios.get('http://localhost:3001/countries');
+        const response = await axios.get(`${route}/countries`);
         const countries = response.data;   
         dispatch({type: GET_ALL_COUNTRIES, payload: countries})
     }
@@ -12,7 +15,7 @@ export const getAllCountries = () => {
         
 export const getCountryById = (detailId) => {
     return async (dispatch) => {
-        const response = await axios.get(`http://localhost:3001/countries/${detailId}`);
+        const response = await axios.get(`${route}/countries/${detailId}`);
         const country = response.data;
         dispatch({type: GET_COUNTRY_BY_ID, payload: country})
     };
@@ -20,7 +23,7 @@ export const getCountryById = (detailId) => {
         
 export const searchByName = (name) => {
         return async (dispatch) => {
-            const response = await axios.get(`http://localhost:3001/countries?name=${name}`);
+            const response = await axios.get(`${route}/countries?name=${name}`);
             const countries = response.data;
             dispatch({type: SEARCH_BY_NAME, payload: countries})
         };   
@@ -49,14 +52,14 @@ export const filterByContinent = (continent) => {
 
 export const postActivity = (payload) => {
     return async (dispatch) => {
-        const response = await axios.post('http://localhost:3001/activities', payload);
+        const response = await axios.post(`${route}/activities`, payload);
         return response
     };
 };
 
 export const getActivities = () => {
     return async (dispatch) => {
-        const response = await axios.get('http://localhost:3001/activities');
+        const response = await axios.get(`${route}/activities`);
         const activities = response.data;   
         dispatch({type: GET_ACTIVITIES, payload: activities})
     }
