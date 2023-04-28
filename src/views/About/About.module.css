@@ -1,0 +1,122 @@
+.img {
+    background-image: url('https://media.istockphoto.com/id/1210139503/es/vector/patr%C3%B3n-de-viaje-sellos-de-inmigraci%C3%B3n-pegatinas-con-objetos-culturales-hist%C3%B3ricos-que-viajan.jpg?s=612x612&w=0&k=20&c=_FqH4XPU-ztPzW50sCA-C87zJ8dJGUSLfTo96xaSOok=');
+    height: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor {
+    background-color:rgba(217, 217, 217, 0.8);
+    width: 80%;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    box-shadow: 
+    0px 2px 4px rgba(0, 0, 0, 0.7),
+    0px 2px 4px rgba(0, 0, 0, 0.5),
+    0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+.titulo {
+  display: inline-flex;
+  position: relative;
+  top: 25px;
+  left: -200px;
+}
+
+.welcome {
+  margin: 0px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color:#353535;
+}
+
+.name {
+  font-size: 36px;
+  margin-top: 0px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: #003d48;
+  text-shadow: 2px 2px #000000, -2px -2px #d9d9d9;
+}
+.enjoy{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #003d48;
+}
+.parrafo {
+    padding-left: 70px;
+    padding-right: 70px;
+    font-family: monospace;
+    color: #353535;
+    font-size: 15px;
+    text-align: justify;
+}
+.animacion1 {
+    text-align: justify;
+    animation: slide-in 2s forwards;
+}
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+.animacion2 {
+    text-align: justify;
+    animation: slide-in 3s forwards;
+}
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+.animacion3 {
+    text-align: justify;
+    animation: slide-in 4s forwards;
+}
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+.animacion4 {
+    text-align: justify;
+    animation: slide-in 5s forwards;
+}
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+.btn {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:#353535;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 10px;
+    background-color: #ffd500;
+    border: none;
+    box-shadow: 
+    0px 2px 4px rgba(0, 0, 0, 0.7),
+    0px 2px 4px rgba(0, 0, 0, 0.5),
+    0px 4px 8px rgba(0, 0, 0, 0.3);
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    position: absolute;
+    bottom: 80px;
+    left: 47,5%;
+ }
+
+ .btn:hover{
+    transform: scale(1.1);
+    background-color: #d00000;
+    color:#d9d9d9;
+ } 

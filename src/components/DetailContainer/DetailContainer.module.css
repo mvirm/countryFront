@@ -1,0 +1,115 @@
+
+.detail {
+    position: relative;
+    height: 520px;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    padding: 0px;
+}
+
+.detail::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://media.istockphoto.com/id/849302872/es/vector/mapa-mundial-con-pa%C3%ADses-aislados-sobre-fondo-blanco-ilustraci%C3%B3n-de-vector.jpg?s=612x612&w=0&k=20&c=B15IrFIRN8AFlTCcdMZMrMPNOmDE40dJxHDT2UpLaOY=');
+    background-size: 1100px;
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    opacity: 50%
+
+}
+
+.contenedor {
+    position: relative;
+    background-color:rgba(217, 217, 217, 0.7);
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    box-shadow: 
+    0px 2px 4px rgba(0, 0, 0, 0.7),
+    0px 2px 4px rgba(0, 0, 0, 0.5),
+    0px 4px 8px rgba(0, 0, 0, 0.3);
+    width: fit-content;
+    height: 80%;
+    margin-top: 30px;
+}
+.titulo {
+    position:relative;
+    display: inline-flex;
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #003d48
+}
+.flag {
+    position: relative;
+    width: 0px;
+    height: 0px;
+    margin: 20px 30px 0px 10px;
+    box-shadow: 
+    0px 2px 4px rgba(0, 0, 0, 0.7),
+    0px 2px 4px rgba(0, 0, 0, 0.5),
+    0px 4px 8px rgba(0, 0, 0, 0.3);
+    animation: crecer 3s forwards;
+  }
+  @keyframes crecer {
+    from {
+      width: 0px;
+      height: 0px;
+    }
+    to {
+      width: 260px;
+      height: 160px;
+    }
+  }
+ 
+.detalles {
+    font-family: monospace;
+    color: #353535;
+    font-size: 15px;
+    position: relative;
+    left: 40%;
+    bottom: 40px
+
+}
+
+.alineado {
+    display: flex;
+    flex-direction: row;
+}
+.h5 {
+    margin-top: 0px;
+}
+.h4{
+    margin-top: 1px;
+}
+
+
+.btn {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:#353535;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 10px;
+    background-color: #ffd500;
+    border: none;
+    box-shadow: 
+    0px 2px 4px rgba(0, 0, 0, 0.7),
+    0px 2px 4px rgba(0, 0, 0, 0.5),
+    0px 4px 8px rgba(0, 0, 0, 0.3);
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    position: absolute;
+    bottom: 25px;
+    left: 47,5%;
+ }
+
+ .btn:hover{
+    transform: scale(1.1);
+    background-color: #d00000;
+    color:#d9d9d9;
+ } 

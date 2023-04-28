@@ -1,0 +1,237 @@
+.contenedor {
+    background-image: url('https://media.istockphoto.com/id/1219583078/es/foto/mapa-de-europa-y-corazones-con-banderas-de-pa%C3%ADses-europeos-concepto-de-viajes-y-turismo-a-la.jpg?s=612x612&w=0&k=20&c=9dU_1jLDeFR9M7jHLZnccWjVeHtH5QNTtCOhZjG0udM=');
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(217, 217, 217, 0.6); /* Capa semitransparente encima de la imagen */
+}   
+
+.img {
+    background-image: url('https://media.istockphoto.com/id/519683757/es/foto/viaja-por-todo-el-mundo.jpg?s=612x612&w=0&k=20&c=A1Mh0psbqv7iCAL9FwD9Q1g06Ort0iDmSIY9b00vcH4=');
+    background-repeat: no-repeat;
+    height: 590px; 
+    width: 500px;
+    position:relative;
+    top: -20px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    box-shadow: 
+    0px 2px 4px rgba(0, 0, 0, 0.7),
+    0px 2px 4px rgba(0, 0, 0, 0.5),
+    0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.titulo {
+    display: inline-flex;
+    position: absolute;
+    top: 40px;
+    left: 40px
+  } 
+.subtitulo {
+    margin: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:#d9d9d9;
+  }
+  .titulo1 {
+    font-size: 30px;
+    margin-top: 0px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #a9a9a9;
+    text-shadow: 2px 2px #000000, -1px -1px #d9d9d9;
+  }
+.anclaje {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 25%;
+    top: 90px;
+}
+.span {
+    font-family: monospace;
+    color:#d9d9d9;
+    font-size: 16px;
+}
+.form {
+    position: relative;
+    top: 100px;
+    font-family: monospace;
+    color:#d9d9d9;
+    font-size: 16px;
+}
+.option {
+    background-color: #d9d9d9;
+    border: solid 2px #005f73;
+    box-shadow: 
+    0px 2px 4px rgba(0, 0, 0, 0.7),
+    0px 2px 4px rgba(0, 0, 0, 0.5),
+    0px 4px 8px rgba(0, 0, 0, 0.3);
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin: 7px 0 7px 0;
+    font-family: monospace;
+    color: #353535;
+    font-size: 14px;
+    width: 150px;
+}
+.option:hover{
+    transform: scale(1.2);
+ } 
+
+.optionCountries {
+    background-color: #d9d9d9;
+    border: solid 2px #005f73;
+    box-shadow: 
+    0px 2px 4px rgba(0, 0, 0, 0.7),
+    0px 2px 4px rgba(0, 0, 0, 0.5),
+    0px 4px 8px rgba(0, 0, 0, 0.3);
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-family: monospace;
+    color: #353535;
+    font-size: 14px;
+}
+.optionCountries:hover{
+    transform: scale(1.2);
+ } 
+
+ .btnHome {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:#353535;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    background-color: #ffd500;
+    border: none;
+    box-shadow: 
+    0px 2px 4px rgba(0, 0, 0, 0.7),
+    0px 2px 4px rgba(0, 0, 0, 0.5),
+    0px 4px 8px rgba(0, 0, 0, 0.3);
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+ }
+
+ .btnHome:hover{
+    transform: scale(1.1);
+    background-color: #d00000;
+    color:#d9d9d9;
+ } 
+
+ .btnCreate {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:#353535;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+    background-color: #ffd500;
+    border: none;
+    box-shadow: 
+    0px 2px 4px rgba(0, 0, 0, 0.7),
+    0px 2px 4px rgba(0, 0, 0, 0.5),
+    0px 4px 8px rgba(0, 0, 0, 0.3);
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    position:absolute;
+    bottom: -180px;
+    left: 47%;
+ }
+ .btnCreate:hover{
+    transform: scale(1.1);
+    background-color: #d00000;
+    color:#d9d9d9;
+ } 
+ .btnInhabilitado {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:#353535;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+    background-color: #a9a9a9;
+    border: none;
+    box-shadow: 
+    0px 2px 4px rgba(0, 0, 0, 0.7),
+    0px 2px 4px rgba(0, 0, 0, 0.5),
+    0px 4px 8px rgba(0, 0, 0, 0.3);
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    position:absolute;
+    bottom: -180px;
+    left: 47%;
+ }
+ .countriesSelected {
+    background-color: rgba(217, 217, 217, 0.6);
+    width: 350px;
+    height: auto;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    position: absolute;
+    bottom: 170px;
+    left: 20%;
+    display: flex;
+    flex-direction: row;
+ }
+ .label {
+    font-family: monospace;
+    color: #353535;
+    font-size: 12px;
+ }
+ .id {
+    display: flex;
+    flex-direction: row;
+    font-family: monospace;
+    font-size: 11px;
+ }
+ .btnDelete {
+    background-color: #a9a9a9;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    color:#d00000;
+    font-size: 8px;
+    font-weight: bold;
+    position:relative;
+    top: 9px
+ }
+ .btnDelete:hover{
+    transform: scale(1.1);
+    background-color: #d00000;
+    color:#d9d9d9;
+ }
+
+.vDanger {
+    color: #d00000;
+    font-family: monospace;
+    font-size: 11px;
+    margin: 0px
+}
+
+.success {
+    position: relative;
+    z-index: 9999;
+    left: 50%;
+    top: 100%;
+    animation: crecer 3s forwards;
+  }
+  @keyframes crecer {
+    from {
+      width: 0px;
+      height: 0px;
+    }
+    to {
+      width: 260px;
+      height: 160px;
+    }
+  }
+ 
+  

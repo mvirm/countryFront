@@ -1,0 +1,35 @@
+.order {
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+}
+
+.option {
+        background-color: #d9d9d9;
+        border: solid 2px #005f73;
+        box-shadow: 
+        0px 2px 4px rgba(0, 0, 0, 0.7),
+        0px 2px 4px rgba(0, 0, 0, 0.5),
+        0px 4px 8px rgba(0, 0, 0, 0.3);
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        font-family: monospace;
+        color:#353535;
+        font-size: 14px;
+        width: 150px;
+}
+
+.label {
+    font-size: 14px;
+}
+.ordenador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.separador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}

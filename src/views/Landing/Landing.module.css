@@ -1,0 +1,70 @@
+.img {
+
+    background-image: url('https://media.istockphoto.com/id/1219583078/es/foto/mapa-de-europa-y-corazones-con-banderas-de-pa%C3%ADses-europeos-concepto-de-viajes-y-turismo-a-la.jpg?s=612x612&w=0&k=20&c=9dU_1jLDeFR9M7jHLZnccWjVeHtH5QNTtCOhZjG0udM=');
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 700px;
+    
+}
+
+.margen {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.titulo {
+    display: inline-flex;
+    position: absolute;
+    top: 225px;
+    left: 220px;
+}
+
+.welcome {
+    margin: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:#353535;
+}
+
+ .name {
+    font-size: 47px;
+    margin-top: 0px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #354f52;
+    opacity: 0.8;
+    text-shadow: 2px 2px #000000, -2px -2px #d9d9d9;
+ }
+ .anclaje {
+    width: 400px;
+    position: absolute;
+    top: 290px;
+    left: 340px;
+    font-family:monospace;
+    color:#353535;
+ }
+
+
+ .btn {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:#353535;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 7px;
+    background-color: #ffd500;
+    border: none;
+    box-shadow: 
+    0px 2px 4px rgba(51, 51, 51, 0.7),
+    0px 2px 4px rgba(51, 51, 51, 0.5),
+    0px 4px 8px rgba(51, 51, 51, 0.3);
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+ }
+
+ .btn:hover{
+    transform: scale(1.1);
+    background-color: #d00000;
+    color:#d9d9d9;
+ } 
