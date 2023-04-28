@@ -14,6 +14,7 @@ const Pagination = ({ countriesPerPage, totalCountries, paginate, currentPage, p
         {currentPage !== 1 ? <NavLink to={previus} onClick={() => paginate(previus)}><img className={styles.flechaPrev} src={imagenPrev} alt="previus"/></NavLink>: null}
           <h5 className={styles.textPage}>page </h5><h3 className={styles.pagina}> {currentPage}</h3> <h5 className={styles.textPage}>/ {lastPage}</h5>   
         {currentPage !== lastPage ? <NavLink to={next} onClick={() => paginate(next)}><img className={styles.flechaNext} src={imagenNext} alt="next"/></NavLink> : null}
+        {currentPage !== 1 ? <button className={styles.btn} onClick={() => paginate(1)}>1st Page</button> : null}
       </nav>
     );
   };
