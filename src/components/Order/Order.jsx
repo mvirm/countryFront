@@ -4,14 +4,16 @@ import styles from './Order.module.css';
 import {useDispatch} from 'react-redux';
 import {sortByPopulation, sortByName} from "../../redux/actions";
 
-const Order = () => {
+const Order = ({paginate}) => {
   const dispatch = useDispatch();
 
   const handlerSortByPop = (e) => {
     dispatch(sortByPopulation(e.target.value))
+    paginate(1)
   };
   const handlerSortByName = (e) => {
     dispatch(sortByName(e.target.value))
+    paginate(1)
   }
 
     return(
