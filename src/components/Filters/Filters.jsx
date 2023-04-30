@@ -2,11 +2,14 @@
 import React from 'react';
 import styles from './Filters.module.css';
 import {useDispatch, useSelector} from 'react-redux';
+import {useState} from 'react';
 import { filterByContinent, filterByActivity } from '../../redux/actions';
 
 const Filters = ({paginate}) => {
   
     const activities = useSelector(state => state.activities); // para el filtrado por actividad
+    const [continentValue, setContinentValue] = useState('');
+    const [activityValue, setActivityValue] = useState('');
 
     const activitiesFiltered = activities.filter(
         (activity, index, self) => index === self.findIndex((a) => a.name === activity.name)
@@ -16,13 +19,16 @@ const Filters = ({paginate}) => {
     const dispatch = useDispatch();
    
     const handlerFilterContinent = (e) => {
-        dispatch(filterByContinent(e.target.value))
+        dispatch(filterByContinent(e.target.value));
+        setContinentValue('')
         paginate(1);
-    }
+    } 
+
     const handlerFilterActivity = (e) => {
-        dispatch(filterByActivity(e.target.value))
+        dispatch(filterByActivity(e.target.value));
+        setActivityValue('')
         paginate(1);
-    }
+        } 
 
     return(
         <div className={styles.filtro}>
@@ -30,7 +36,7 @@ const Filters = ({paginate}) => {
             <div>
                 <div className={styles.ordenador}>
                 <label htmlFor="continentFilter" className={styles.label}>Continet:</label>
-                <select className={styles.option} name="continentFilter" onChange={handlerFilterContinent} >
+                <select className={styles.option} name="continentFilter" onChange={handlerFilterContinent} value={continentValue}>
                     <option value='' readOnly hidden>Choise...</option>
                     {continents && continents.map(continent => {
                         return(
@@ -41,7 +47,7 @@ const Filters = ({paginate}) => {
                 </div>
                 <div className={styles.separador}>
                 <label htmlFor="activityFilter" className={styles.label}>Tourist activity:</label>
-                <select className={styles.option} name="activityFilter" onChange={handlerFilterActivity}>
+                <select className={styles.option} name="activityFilter" onChange={handlerFilterActivity} value={activityValue}>
                     <option value='' readOnly hidden>Choise...</option>
                     {activitiesFiltered && activitiesFiltered.map(a => {
                         return(
