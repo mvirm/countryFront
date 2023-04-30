@@ -7,6 +7,11 @@ import { filterByContinent, filterByActivity } from '../../redux/actions';
 const Filters = ({paginate}) => {
   
     const activities = useSelector(state => state.activities); // para el filtrado por actividad
+
+    const activitiesFiltered = activities.filter(
+        (activity, index, self) => index === self.findIndex((a) => a.name === activity.name)
+    ); // me aseguro que activities no tenga nombre de actividades repetidas => activity: el elemento actual en activities/index: el índice del elemento actual activities/self: una referencia al array activities
+
     const continents = ["Africa", "Antarctica", "Asia", "Europe", "North America", "Oceania", "South America"]
     const dispatch = useDispatch();
    
@@ -38,7 +43,7 @@ const Filters = ({paginate}) => {
                 <label htmlFor="activityFilter" className={styles.label}>Tourist activity:</label>
                 <select className={styles.option} name="activityFilter" onChange={handlerFilterActivity}>
                     <option value='' readOnly hidden>Choise...</option>
-                    {activities && activities.map(a => {
+                    {activitiesFiltered && activitiesFiltered.map(a => {
                         return(
                             <option key={a.id} value={a.name}>{a.name}</option>
                         )
