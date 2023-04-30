@@ -23,7 +23,7 @@
     height: 15%;
     margin:0px;
     padding: 0px;
-    animation: rotate 10s linear infinite;
+    animation: rotate 30s linear infinite;
     filter:sepia(30%)
 }
 @keyframes rotate {
