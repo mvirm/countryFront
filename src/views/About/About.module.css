@@ -47,54 +47,7 @@
     font-size: 15px;
     text-align: justify;
 }
-.animacion1 {
-    text-align: justify;
-    animation: slide-in 2s forwards;
-}
-@keyframes slide-in {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0%);
-  }
-}
-.animacion2 {
-    text-align: justify;
-    animation: slide-in 3s forwards;
-}
-@keyframes slide-in {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0%);
-  }
-}
-.animacion3 {
-    text-align: justify;
-    animation: slide-in 4s forwards;
-}
-@keyframes slide-in {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0%);
-  }
-}
-.animacion4 {
-    text-align: justify;
-    animation: slide-in 5s forwards;
-}
-@keyframes slide-in {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0%);
-  }
-}
+
 .btn {
     font-family:Georgia, 'Times New Roman', Times, serif;
     color:#353535;
